@@ -9,6 +9,19 @@ fun main() {
 
     FirstChapter.iterateOverString("Hi Kotlin")
 
+    FirstChapter.hasChar("kotlin", 'k')
+
+    FirstChapter.hasCharBooleanReturn("kotlin", 's')
+
+    println("is digit : ${FirstChapter.isDigit('c')}")
+
+
+    FirstChapter.reverse("Abgh")
+
+
+
+
+
 
 }
 
