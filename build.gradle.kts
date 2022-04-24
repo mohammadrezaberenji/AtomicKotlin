@@ -20,6 +20,7 @@ kotlin {
         else -> throw GradleException("Host OS is not supported in Kotlin/Native.")
     }
 
+
     nativeTarget.apply {
         binaries {
             executable {
@@ -28,7 +29,25 @@ kotlin {
         }
     }
     sourceSets {
-        val nativeMain by getting
-        val nativeTest by getting
+        val nativeMain by getting{
+            dependencies{
+                implementation("org.junit.jupiter:junit-jupiter:5.4.2")
+                implementation("org.junit.jupiter:junit-jupiter:5.4.2")
+//                implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.6.0")
+
+            }
+        }
+        val nativeTest by getting {
+            dependencies{
+                implementation("org.junit.jupiter:junit-jupiter:5.4.2")
+                implementation("org.junit.jupiter:junit-jupiter:5.4.2")
+            }
+        }
     }
+
+
 }
+
+
+
+

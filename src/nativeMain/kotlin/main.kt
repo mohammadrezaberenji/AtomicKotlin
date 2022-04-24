@@ -1,3 +1,5 @@
+import atomictest.*
+
 fun main() {
 
     var a = 10
@@ -16,15 +18,21 @@ fun main() {
     println("is digit : ${FirstChapter.isDigit('c')}")
 
 
+
     FirstChapter.reverse("Abgh")
 
-
-
-
+    highOrder { a: Int, b: Int -> a + b }
 
 
 }
 
 
+fun highOrder(lambda: (Int, Int) -> Int) {
+    var result = lambda(2, 4)
+    println("highOrder : result is $result")
+
+
+
+}
 
 
