@@ -1,4 +1,3 @@
-import atomictest.*
 
 fun main() {
 
@@ -7,7 +6,7 @@ fun main() {
     var result: Int
 
 
-    FirstChapter.showRange(10 downTo 0 step 3)
+    FirstChapter.showRange(10 downTo  0 step 3)
 
     FirstChapter.iterateOverString("Hi Kotlin")
 
